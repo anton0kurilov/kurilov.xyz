@@ -9,6 +9,22 @@ a {
 
 @import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap";
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@mixin loading {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -22,6 +38,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include loading;
+    animation-duration: .7s;
+    animation-delay: .25s;
 }
 
 .name {
@@ -43,7 +62,7 @@ body {
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 3px;
-        font-size: 4.1em;
+        font-size: 4.3em;
         margin: 0;
     }
 }
