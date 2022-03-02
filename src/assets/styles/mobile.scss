@@ -1,4 +1,4 @@
-@media screen and (max-width:1000px) {
+@media screen and (max-width:800px) {
     .name {
         flex-direction: column;
         text-align: center;
@@ -24,4 +24,27 @@
             margin: 0 8px;
         }
     }
+}
+
+@media screen and (max-width: 300px) {
+    .name {
+        &__block {
+            &-name {
+                font-size: 2em;
+            }
+
+            &-description {
+                font-size: .7em;
+            }
+        }
+    }
+
+    .links {
+        &__item {
+            padding: 6px 0;
+            margin: 0 6px;
+            font-size: .8em;
+        }
+    }
+
 }
