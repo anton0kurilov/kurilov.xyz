@@ -1,0 +1,18 @@
+{
+    "short_name": "Kurilov",
+    "name": "Anton Kurilov",
+    "icons": [
+      {
+        "src": "favicon.svg",
+        "type": "image/svg+xml",
+        "sizes": "any"
+      }
+    ],
+    "start_url": "https://kurilov.site",
+    "background_color": "#222",
+    "display": "standalone",
+    "lang": "en-US",
+    "orientation": "portrait-primary",
+    "theme_color": "#222",
+    "description": "Personal webpage of Tech Editor and Beginner Frontend Developer"
+  }
