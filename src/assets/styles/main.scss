@@ -48,14 +48,11 @@ body {
     animation-duration: .5s;
     animation-delay: .2s;
 
-    &__photo {
+    &__photo>picture>img {
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        background-image: url("../images/photo.png");
-        background-size: cover;
-        background-position: center center;
-        margin: 0 20px 0 0;
+        margin: 0 30px 0 0;
     }
 
     &__block {

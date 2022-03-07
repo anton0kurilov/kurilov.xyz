@@ -3,7 +3,7 @@
         flex-direction: column;
         text-align: center;
 
-        &__photo {
+        &__photo>picture>img {
             margin: 0 0 30px 0;
         }
 
