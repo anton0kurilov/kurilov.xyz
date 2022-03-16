@@ -1,9 +1,9 @@
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
     .name {
         flex-direction: column;
         text-align: center;
 
-        &__photo>picture>img {
+        &__photo > picture > img {
             margin: 0 0 30px 0;
         }
 
@@ -13,7 +13,7 @@
             }
 
             &-description {
-                font-size: .9em;
+                font-size: 0.9em;
             }
         }
     }
@@ -34,7 +34,7 @@
             }
 
             &-description {
-                font-size: .7em;
+                font-size: 0.7em;
             }
         }
     }
@@ -43,7 +43,7 @@
         &__item {
             padding: 6px 0;
             margin: 0 6px;
-            font-size: .8em;
+            font-size: 0.8em;
         }
     }
 }
