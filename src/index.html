@@ -32,7 +32,9 @@
         <section class="name">
             <div class="name__photo">
                 <picture>
-                    <img src="assets/images/photo.png" alt="Personal photo" draggable="false" />
+                    <source srcset="assets/images/photo.png?as=webp&width=100" type="image/webp" />
+                    <source srcset="assets/images/photo.png?as=jpeg&width=100" type="image/jpeg" />
+                    <img src="assets/images/photo.png?width=100" alt="Personal photo" draggable="false" />
                 </picture>
             </div>
             <div class="name__block">
