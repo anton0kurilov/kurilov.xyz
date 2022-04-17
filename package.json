@@ -1,15 +1,17 @@
 {
-    "devDependencies": {
-        "@parcel/packager-raw-url": "^2.3.2",
-        "@parcel/transformer-sass": "^2.3.2",
-        "@parcel/transformer-webmanifest": "^2.3.2",
-        "parcel": "^2.3.2",
-        "sass": "^1.49.8",
-        "sharp": "^0.29.3"
-    },
-    "scripts": {
-        "start": "parcel src/index.html",
-        "dev": "parcel src/index.html",
-        "build": "rm -rf dist/* && parcel build src/index.html"
-    }
+	"devDependencies": {
+		"@parcel/packager-raw-url": "^2.3.2",
+		"@parcel/transformer-sass": "^2.3.2",
+		"@parcel/transformer-webmanifest": "^2.3.2",
+		"parcel": "^2.3.2",
+		"sass": "^1.49.8",
+		"sharp": "^0.29.3"
+	},
+	"scripts": {
+		"start": "parcel src/index.html",
+		"dev": "parcel src/index.html",
+		"build": "rm -rf dist/* && parcel build src/index.html"
+	},
+	"source": "src/index.html",
+	"browserslist": "> 0.5%, last 2 versions, not dead"
 }
