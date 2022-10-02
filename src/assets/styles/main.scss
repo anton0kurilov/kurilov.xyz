@@ -101,5 +101,8 @@ body {
             color: #fff;
             border-color: #fff;
         }
+        &:active {
+            transform: scale(1.1);
+        }
     }
 }
