@@ -22,7 +22,7 @@
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 380px) {
     .name {
         &__block {
             &-name {
@@ -41,11 +41,5 @@
             padding: 6px 0;
             font-size: 0.8em;
         }
-    }
-}
-
-@media screen and (max-height: 300px) {
-    .name__photo {
-        display: none;
     }
 }
