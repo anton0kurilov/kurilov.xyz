@@ -1,21 +1,19 @@
 @media screen and (max-width: 800px) {
-    .name {
+    .header {
         flex-direction: column;
         text-align: center;
-        &__block {
-            &-name {
-                font-size: 2.6em;
-            }
+        &-name {
+            font-size: 2.6em;
+        }
 
-            &-description {
-                font-size: 0.9em;
-            }
+        &-about {
+            font-size: 0.9em;
         }
     }
 
     .links {
         gap: 16px;
-        &__item {
+        &-item {
             padding: 8px 0;
             font-size: 1em;
         }
@@ -23,21 +21,19 @@
 }
 
 @media screen and (max-width: 380px) {
-    .name {
-        &__block {
-            &-name {
-                font-size: 2em;
-            }
+    .header {
+        &-name {
+            font-size: 2em;
+        }
 
-            &-description {
-                font-size: 0.7em;
-            }
+        &-about {
+            font-size: 0.8em;
         }
     }
 
     .links {
         gap: 8px;
-        &__item {
+        &-item {
             padding: 6px 0;
             font-size: 0.8em;
         }
