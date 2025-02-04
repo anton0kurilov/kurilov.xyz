@@ -1,0 +1,32 @@
+:root {
+    --margin: 30px;
+}
+
+*,
+*:focus {
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 50%;
+    gap: var(--margin);
+}
+
+.left,
+.right {
+    width: 100%;
+}
+
+.left {
+    margin: var(--margin) 0 var(--margin) var(--margin);
+}
+
+.right {
+    margin: var(--margin) var(--margin) var(--margin) 0;
+}
