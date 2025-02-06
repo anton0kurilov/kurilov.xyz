@@ -1,21 +1,42 @@
 :root {
     --margin: 30px;
+    --padding: 30px;
+    --color-border: #1e1e1e;
+    --color-text-main: #fff;
+    --color-text-sub: #a0a0a0;
+    --color-bg: #000;
 }
 
 *,
 *:focus {
     -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
+    background-color: var(--color-bg);
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex: 50%;
     gap: var(--margin);
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: var(--color-text-main);
 }
 
 .left,
@@ -25,8 +46,129 @@ body {
 
 .left {
     margin: var(--margin) 0 var(--margin) var(--margin);
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - var(--margin));
+    position: sticky;
+    top: 0px;
 }
 
 .right {
     margin: var(--margin) var(--margin) var(--margin) 0;
+    overflow-y: auto;
+}
+
+section {
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--margin);
+    padding: var(--padding);
+    margin: 0 0 var(--margin) 0;
+}
+
+section.header {
+    h1.header-name {
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--color-text-main);
+    }
+}
+
+section.desc {
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    p.desc-text {
+        color: var(--color-text-sub);
+        font-size: 32px;
+    }
+    button.desc-button {
+        border: 0;
+        width: calc(100% - var(--padding) * 2);
+        padding: calc(var(--padding) / 2);
+        border-radius: var(--margin);
+        background-color: var(--color-text-main);
+        color: var(--color-bg);
+        font-size: 24px;
+        bottom: var(--padding);
+        position: absolute;
+        z-index: 2;
+        transition: all 0.5s;
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(30px);
+        }
+    }
+    div.desc-icon {
+        width: calc(100% - var(--padding) * 2);
+        height: 100%;
+        position: absolute;
+        bottom: -200px;
+        background-image: url('../media/victory.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        &:hover {
+            animation: tilt-shaking 1s 2s;
+            animation-delay: 0s;
+        }
+    }
+}
+
+h2.right-name {
+    font-size: 48px;
+    line-height: 48px;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--color-text-sub);
+}
+
+section.work,
+section.projects {
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    div.work-item,
+    div.project-item {
+        border: 1.5px solid var(--color-border);
+        border-radius: var(--margin);
+        padding: var(--padding);
+        margin: var(--margin) 0;
+        transition: all 0.5s;
+        &:hover {
+            background-color: var(--color-border);
+        }
+        h3.work-item-name,
+        h3.project-item-name {
+            margin: 0 0 5px 0;
+            padding: 0;
+            font-size: 48px;
+            line-height: 48px;
+        }
+        p.work-item-desc,
+        p.project-item-desc {
+            color: var(--color-text-sub);
+            font-size: 32px;
+        }
+    }
+}
+
+@keyframes tilt-shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0eg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
