@@ -48,7 +48,7 @@ body {
     margin: var(--margin) 0 var(--margin) var(--margin);
     display: flex;
     flex-direction: column;
-    height: calc(100vh - var(--margin));
+    height: calc(100vh - var(--margin) * 2);
     position: sticky;
     top: 0px;
 }
@@ -79,12 +79,12 @@ section.desc {
     flex-grow: 1;
     position: relative;
     overflow: hidden;
+    margin-bottom: 0;
     p.desc-text {
         color: var(--color-text-sub);
         font-size: 32px;
     }
     button.desc-button {
-        border: 0;
         width: calc(100% - var(--padding) * 2);
         padding: calc(var(--padding) / 2);
         border-radius: var(--margin);
