@@ -50,7 +50,7 @@ body {
     flex-direction: column;
     height: calc(100vh - var(--margin) * 2);
     position: sticky;
-    top: 0px;
+    top: 30px;
 }
 
 .right {
@@ -85,6 +85,7 @@ section.desc {
         font-size: 32px;
     }
     button.desc-button {
+        border: 0;
         width: calc(100% - var(--padding) * 2);
         padding: calc(var(--padding) / 2);
         border-radius: var(--margin);
@@ -153,6 +154,10 @@ section.projects {
             font-size: 32px;
         }
     }
+}
+
+section.links {
+    margin-bottom: 0;
 }
 
 @keyframes tilt-shaking {
