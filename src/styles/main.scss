@@ -23,6 +23,11 @@ p {
     padding: 0;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 body {
     background-color: var(--color-bg);
     display: flex;
@@ -128,10 +133,6 @@ h2.right-name {
 
 section.work,
 section.projects {
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
     div.work-item,
     div.project-item {
         border: 1.5px solid var(--color-border);
@@ -159,6 +160,20 @@ section.projects {
 
 section.links {
     margin-bottom: 0;
+    div.links-item {
+        width: 100%;
+        padding: calc(var(--padding) / 2);
+        margin: var(--margin) 0;
+        border-radius: var(--margin);
+        background-color: var(--color-text-main);
+        color: var(--color-bg);
+        font-size: 24px;
+        text-align: center;
+        transition: all 0.5s;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    }
 }
 
 @keyframes tilt-shaking {
