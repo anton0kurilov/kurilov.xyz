@@ -45,12 +45,12 @@ body {
     overscroll-behavior: none;
 }
 
-.left,
-.right {
+aside.left,
+main.right {
     width: 100%;
 }
 
-.left {
+aside.left {
     margin: var(--margin) 0 var(--margin) var(--margin);
     display: flex;
     flex-direction: column;
@@ -59,9 +59,16 @@ body {
     top: 30px;
 }
 
-.right {
+main.right {
     margin: var(--margin) var(--margin) var(--margin) 0;
     overflow-y: auto;
+    h2.right-name {
+        font-size: 48px;
+        line-height: 48px;
+        text-align: left;
+        text-transform: uppercase;
+        color: var(--color-text-sub);
+    }
 }
 
 section {
@@ -121,14 +128,6 @@ section.desc {
             animation-delay: 0s;
         }
     }
-}
-
-h2.right-name {
-    font-size: 48px;
-    line-height: 48px;
-    text-align: left;
-    text-transform: uppercase;
-    color: var(--color-text-sub);
 }
 
 section.work,
