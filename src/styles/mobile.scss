@@ -1,0 +1,11 @@
+main {
+    width: 100%;
+    margin: var(--padding);
+}
+
+@media screen and (max-width: 400px) {
+    h1.greeting {
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
+    }
+}
