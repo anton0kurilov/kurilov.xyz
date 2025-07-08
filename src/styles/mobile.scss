@@ -9,3 +9,9 @@ main {
         line-height: 2rem !important;
     }
 }
+
+@media screen and (max-height: 400px) and (orientation: landscape) {
+    .avatar {
+        display: none;
+    }
+}
