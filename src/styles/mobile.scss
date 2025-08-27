@@ -11,7 +11,7 @@ main {
 }
 
 @media screen and (max-height: 400px) and (orientation: landscape) {
-    .avatar {
+    div.avatar {
         display: none;
     }
 }
