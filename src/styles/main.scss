@@ -57,17 +57,18 @@ header {
         font-size: 2rem;
         line-height: 2.6rem;
         font-variation-settings: 'wght' 800;
-        a {
+        .greeting-link {
             border-bottom: 3px solid var(--color-text-primary);
-        }
-        .greeting-link-yellow:hover {
-            border-color: #e6c41d;
-        }
-        .greeting-link-gray:hover {
-            border-color: #808080;
-        }
-        .greeting-link-blue:hover {
-            border-color: #0072bc;
+
+            &.yellow:hover {
+                border-color: #e6c41d;
+            }
+            &.gray:hover {
+                border-color: #808080;
+            }
+            &.blue:hover {
+                border-color: #0072bc;
+            }
         }
         .greeting-dimmed {
             color: var(--color-text-dimmed);
