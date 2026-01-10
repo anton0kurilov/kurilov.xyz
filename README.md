@@ -1,3 +1,10 @@
-# This is my personal webpage ✌️
+# Это моя личная веб-страница ✌️
 
-![My webpage's screenshot](https://iili.io/LOSkpS.png)
+![Скриншот моей страницы](https://iili.io/fkO48WG.png)
+
+## Технологии
+
+-   **Бандлер**: Parcel
+-   **Стили**: SASS/SCSS
+-   **Оптимизация**: Sharp (изображения), SVGO (SVG)
+-   **PWA**: Базовая поддержка Progressive Web App
