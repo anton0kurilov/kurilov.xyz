@@ -1,6 +1,6 @@
 {
-    "short_name": "Kurilov",
-    "name": "Anton Kurilov",
+    "short_name": "Антон Курилов",
+    "name": "Антон Курилов",
     "icons": [
         {
             "src": "favicon.svg",
@@ -8,11 +8,11 @@
             "sizes": "any"
         }
     ],
-    "start_url": "https://kurilov.site",
-    "background_color": "#222",
+    "start_url": "https://kurilov.xyz",
+    "background_color": "#fff",
     "display": "standalone",
-    "lang": "en-US",
+    "lang": "ru-RU",
     "orientation": "portrait-primary",
-    "theme_color": "#222",
-    "description": "Personal webpage of Tech Editor and Beginner Frontend Developer"
+    "theme_color": "#fff",
+    "description": "Личная страница журналиста в сфере технологий. Пишу о нейросетях, приложениях и интерфейсах."
 }
