@@ -1,7 +1,15 @@
 @font-face {
-    font-family: 'MartianGrotesk';
-    src: url('../fonts/MartianGrotesk.woff2') format('woff2-variations');
-    font-display: block;
-    font-weight: 100 1000;
-    font-stretch: 25% 151%;
+    font-family: 'Kibernetyk Mono';
+    src: url('../fonts/KibernetykMono-Regular.ttf') format('truetype');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kibernetyk Mono';
+    src: url('../fonts/KibernetykMono-Bold.ttf') format('truetype');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
 }

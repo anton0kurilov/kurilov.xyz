@@ -9,10 +9,10 @@
         }
     ],
     "start_url": "https://kurilov.xyz",
-    "background_color": "#eee",
+    "background_color": "#111111",
     "display": "standalone",
     "lang": "ru-RU",
     "orientation": "portrait-primary",
-    "theme_color": "#eee",
+    "theme_color": "#111111",
     "description": "Личная страница журналиста в сфере технологий. Пишу о нейросетях, приложениях и интерфейсах."
 }

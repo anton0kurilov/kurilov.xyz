@@ -1,24 +1,19 @@
 <!doctype html>
 <html lang="ru">
     <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Антон Курилов</title>
         <link
             rel="preload"
-            href="../src/fonts/MartianGrotesk.woff2"
+            href="../src/fonts/KibernetykMono-Regular.ttf"
             as="font"
-            type="font/woff2"
+            type="font/ttf"
             crossorigin
         />
         <link rel="stylesheet" href="../src/styles/main.scss" />
-        <link
-            rel="stylesheet"
-            href="../src/styles/mobile.scss"
-            media="(max-width: 1200px)"
-        />
-        <link rel="icon" type="image/x-icon" href="../src/meta/favicon.svg" />
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#eee" />
+        <link rel="icon" type="image/svg+xml" href="../src/meta/favicon.svg" />
+        <meta name="theme-color" content="#111111" />
         <link rel="manifest" href="../src/meta/manifest.json" />
         <meta name="yandex-verification" content="d0ba44d224b52150" />
         <meta
@@ -27,131 +22,146 @@
         />
     </head>
     <body>
-        <main aria-labelledby="page-title">
-            <header>
-                <div class="avatar">
-                    <picture>
-                        <source
-                            srcset="../src/images/photo.png?as=webp&width=500"
-                            type="image/webp"
-                        />
-                        <source
-                            srcset="../src/images/photo.png?as=jpeg&width=500"
-                            type="image/jpeg"
-                        />
-                        <img
-                            src="../src/images/photo.png?width=500"
-                            alt="Personal photo"
-                            draggable="false"
-                        />
-                    </picture>
-                </div>
-                <h1 class="greeting">
-                    <span class="greeting-dimmed"
-                        >Привет! Я Антон Курилов.</span
-                    >
-                    Пишу и редактирую тексты о технологиях. Сейчас — редактор в
-                    <a
-                        href="https://rozetked.me/user/1224"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="greeting-link yellow"
-                        >Rozetked</a
-                    >, ещё работаю с
-                    <a
-                        href="https://t-j.ru/user162734/"
-                        target="_blank"
-                        class="greeting-link gray"
-                        rel="noopener noreferrer"
-                        >Т—Ж</a
-                    >
-                    и
-                    <a
-                        href="https://4pda.to/forum/index.php?showuser=3414004"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="greeting-link blue"
-                        >4PDA</a
-                    >. Интересуюсь нейросетями, приложениями, интерфейсами и
-                    всем таким.
+        <main class="page">
+            <section class="intro" aria-labelledby="page-title">
+                <p class="intro__greeting">Привет! Я</p>
+                <h1 id="page-title" aria-label="Антон Курилов">
+                    Антон Курилов
                 </h1>
-            </header>
-            <section class="links" aria-label="Социальные ссылки">
-                <a
-                    href="https://t.me/anton0kurilov"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="link"
-                    title="Telegram"
-                    aria-label="Telegram"
-                    ><svg
-                        role="img"
-                        aria-hidden="true"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
-                        /></svg
-                ></a>
-                <a
-                    href="https://github.com/anton0kurilov"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="link"
-                    title="GitHub"
-                    aria-label="GitHub"
-                    ><svg
-                        role="img"
-                        aria-hidden="true"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                        /></svg
-                ></a>
-                <a
-                    href="https://www.last.fm/user/anton0kurilov"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="link"
-                    title="Last.fm"
-                    aria-label="Last.fm"
-                    ><svg
-                        role="img"
-                        aria-hidden="true"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <circle cx="12" cy="12" r="12" />
-                        <path
-                            d="M10.584 17.21l-.88-2.392s-1.43 1.594-3.573 1.594c-1.897 0-3.244-1.649-3.244-4.288 0-3.382 1.704-4.591 3.381-4.591 2.42 0 3.189 1.567 3.849 3.574l.88 2.749c.88 2.666 2.529 4.81 7.285 4.81 3.409 0 5.718-1.044 5.718-3.793 0-2.227-1.265-3.381-3.63-3.931l-1.758-.385c-1.21-.275-1.567-.77-1.567-1.595 0-.934.742-1.484 1.952-1.484 1.32 0 2.034.495 2.144 1.677l2.749-.33c-.22-2.474-1.924-3.492-4.729-3.492-2.474 0-4.893.935-4.893 3.932 0 1.87.907 3.051 3.189 3.601l1.87.44c1.402.33 1.869.907 1.869 1.704 0 1.017-.99 1.43-2.86 1.43-2.776 0-3.93-1.457-4.59-3.464l-.907-2.75c-1.155-3.573-2.997-4.893-6.653-4.893C2.144 5.333 0 7.89 0 12.233c0 4.18 2.144 6.434 5.993 6.434 3.106 0 4.591-1.457 4.591-1.457z"
-                            fill="#fff"
-                            transform="translate(12 12) scale(0.75) translate(-12 -12)"
-                        /></svg
-                ></a>
-                <a
-                    href="mailto:me@kurilov.xyz"
-                    class="link"
-                    title="Электронная почта"
-                    aria-label="Электронная почта"
+                <div class="intro__body">
+                    <p class="intro__text">
+                        Пишу и редактирую тексты о технологиях. Сейчас —
+                        редактор в
+                        <a
+                            href="https://rozetked.me/user/1224"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Rozetked</a
+                        >, ещё работаю с
+                        <a
+                            href="https://t-j.ru/user162734/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Т—Ж</a
+                        >
+                        и
+                        <a
+                            href="https://4pda.to/forum/index.php?showuser=3414004"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >4PDA</a
+                        >. Интересуюсь нейросетями, приложениями, интерфейсами и
+                        всем таким.
+                    </p>
+                    <ul class="social-links" aria-label="Связь и соцсети">
+                        <li>
+                            <a
+                                href="https://t.me/anton0kurilov"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Telegram</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/anton0kurilov"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >GitHub</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://last.fm/user/anton0kurilov"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Last.fm</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="projects" aria-labelledby="projects-title">
+                <h2 id="projects-title">Проекты</h2>
+                <ul class="project-list">
+                    <li class="project">
+                        <div class="project__info">
+                            <h3>
+                                <a
+                                    href="https://start.kurilov.xyz"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Start</a
+                                >
+                            </h3>
+                            <p>RSS-ридер с колонками в духе TweetDeck.</p>
+                        </div>
+                        <a
+                            class="project__source"
+                            href="https://github.com/anton0kurilov/start"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Код Start на GitHub"
+                            >GitHub
+                            <svg
+                                class="icon-external"
+                                viewBox="0 0 12 12"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.2"
+                                stroke-linecap="square"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+                                <path d="M2 10 10 2M2 2h8v8" /></svg
+                        ></a>
+                    </li>
+                    <li class="project">
+                        <div class="project__info">
+                            <h3>
+                                <a
+                                    href="https://consistency.kurilov.xyz"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Consistency</a
+                                >
+                            </h3>
+                            <p>
+                                Минималистичный трекер привычек со статистикой
+                                прогресса.
+                            </p>
+                        </div>
+                        <a
+                            class="project__source"
+                            href="https://github.com/anton0kurilov/consistency"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Код Consistency на GitHub"
+                            >GitHub
+                            <svg
+                                class="icon-external"
+                                viewBox="0 0 12 12"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.2"
+                                stroke-linecap="square"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+                                <path d="M2 10 10 2M2 2h8v8" /></svg
+                        ></a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="contact" aria-labelledby="contact-title">
+                <h2 id="contact-title">
+                    Поговорим?<span class="cursor" aria-hidden="true">_</span>
+                </h2>
+                <a class="contact__email" href="mailto:me@kurilov.xyz"
+                    >me@kurilov.xyz</a
                 >
-                    <svg
-                        role="img"
-                        aria-hidden="true"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M15.61 12c0 1.99-1.62 3.61-3.61 3.61-1.99 0-3.61-1.62-3.61-3.61 0-1.99 1.62-3.61 3.61-3.61 1.99 0 3.61 1.62 3.61 3.61M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12c2.424 0 4.761-.722 6.76-2.087l.034-.024-1.617-1.879-.027.017A9.494 9.494 0 0 1 12 21.54c-5.26 0-9.54-4.28-9.54-9.54 0-5.26 4.28-9.54 9.54-9.54 5.26 0 9.54 4.28 9.54 9.54a9.63 9.63 0 0 1-.225 2.05c-.301 1.239-1.169 1.618-1.82 1.568-.654-.053-1.42-.52-1.426-1.661V12A6.076 6.076 0 0 0 12 5.93 6.076 6.076 0 0 0 5.93 12 6.076 6.076 0 0 0 12 18.07a6.02 6.02 0 0 0 4.3-1.792 3.9 3.9 0 0 0 3.32 1.805c.874 0 1.74-.292 2.437-.821.719-.547 1.256-1.336 1.553-2.285.047-.154.135-.504.135-.507l.002-.013c.175-.76.253-1.52.253-2.457 0-6.617-5.383-12-12-12"
-                        />
-                    </svg>
-                </a>
             </section>
         </main>
     </body>
